@@ -16,6 +16,10 @@ The page follows the progression from ambitious European kitchens through Eska, 
 - keyboard controls and reduced-motion support
 - no analytics, cookies or external runtime dependencies
 
+## Image sources
+
+The four photographs in the Vilgain section are official Vilgain store photography from the [Vilgain Oasis Florenc store page](https://aktin.cz/prodejny/vilgain-oasis-florenc/16). They are stored locally as optimized WebP assets so the live page does not depend on the source CDN.
+
 ## Publishing
 
 The site is intended for GitHub Pages at:

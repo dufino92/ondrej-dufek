@@ -445,6 +445,11 @@ button {
   background: #193226;
 }
 
+.project-vilgain .photo-card-landscape {
+  height: auto;
+  aspect-ratio: 16 / 10;
+}
+
 .photo-card img,
 .gallery-main img,
 .gallery-secondary img,

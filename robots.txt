@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://dufino92.github.io/ondrej-dufek/sitemap.xml

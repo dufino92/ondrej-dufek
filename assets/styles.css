@@ -1045,6 +1045,10 @@ a.press-ambi:hover .press-logo {
 }
 
 @media (min-width: 42rem) {
+  .hero-media img {
+    object-position: center top;
+  }
+
   .site-header {
     grid-template-columns: 1fr auto 1fr;
   }

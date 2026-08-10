@@ -20,6 +20,14 @@ The page follows the progression from ambitious European kitchens through Eska, 
 
 The four photographs in the Vilgain section are official Vilgain store photography from the [Vilgain Oasis Florenc store page](https://aktin.cz/prodejny/vilgain-oasis-florenc/16). They are stored locally as optimized WebP assets so the live page does not depend on the source CDN.
 
+The chef-foundation cards use contextual venue imagery:
+
+- Alchemist: “Perceptions,” official Alchemist press image by Søren Gammelmark.
+- Credo: the Trondheim dining room photographed for Fjordfiesta's Credo project page.
+- Gordon Ramsay Group: York & Albany exterior from the official Gordon Ramsay Restaurants private-events archive.
+
+All three are stored locally as stripped, optimized WebP assets. On-page credits and links preserve their provenance. Their inclusion is contextual to Ondřej Dufek's employment history; public availability does not transfer copyright.
+
 ## Publishing
 
 The site is intended for GitHub Pages at:

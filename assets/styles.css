@@ -226,7 +226,7 @@ button {
 .hero h1 {
   max-width: 13ch;
   font-family: var(--serif);
-  font-size: clamp(3.35rem, 15vw, 8.75rem);
+  font-size: clamp(3.1rem, 11.5vw, 7.6rem);
   font-weight: 400;
   line-height: .84;
   letter-spacing: -.055em;
@@ -1005,6 +1005,10 @@ a.press-ambi:hover .press-logo {
 }
 
 .reveal {
+  opacity: 1;
+}
+
+html.js .reveal {
   opacity: 0;
   transform: translateY(2rem);
   transition:
@@ -1012,7 +1016,7 @@ a.press-ambi:hover .press-logo {
     transform .85s var(--ease);
 }
 
-.reveal.is-visible {
+html.js .reveal.is-visible {
   opacity: 1;
   transform: translateY(0);
 }
@@ -1234,7 +1238,7 @@ a.press-ambi:hover .press-logo {
   }
 
   .hero h1 {
-    max-width: 12ch;
+    max-width: 15ch;
   }
 
   .hero-meta {
@@ -1297,3 +1301,13 @@ a.press-ambi:hover .press-logo {
     transform: none;
   }
 }
+
+.method{display:grid;gap:1.5rem;border-top:1px solid var(--line);background:var(--paper)}
+.method-main{display:grid;gap:2rem}
+.method h2{max-width:13ch;font-family:var(--serif);font-size:clamp(2.9rem,8vw,6rem);line-height:.94;font-weight:400;letter-spacing:-.045em}
+.method-list{display:grid;list-style:none}
+.method-list li{display:grid;grid-template-columns:2.5rem minmax(0,1fr);gap:.8rem;padding:1rem 0;border-top:1px solid var(--line)}
+.method-list li:last-child{border-bottom:1px solid var(--line)}
+.method-list li span{color:var(--green);font-weight:700;font-size:.7rem}
+.method-list li p{font-size:clamp(1rem,1.9vw,1.3rem);max-width:31rem}
+@media(min-width:42rem){.method{grid-template-columns:minmax(7rem,.35fr) 1.65fr}.method-main{grid-template-columns:1fr 1fr;gap:3rem}}

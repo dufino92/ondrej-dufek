@@ -1,5 +1,6 @@
 (() => {
   "use strict";
+  document.documentElement.classList.add("js");
 
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   const header = document.querySelector("[data-header]");

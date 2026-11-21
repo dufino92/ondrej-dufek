@@ -1494,3 +1494,89 @@ html.js .reveal.is-visible {
     gap: 1rem .85rem;
   }
 }
+
+
+/* The uploaded mountain photo is portrait-oriented.
+   Mobile/tablet: image first, solid copy beneath it (no text covering the face).
+   Desktop: preserve the existing split-panel hero. */
+@media (max-width: 55.999rem) {
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    min-height: auto;
+    background: #192820;
+  }
+
+  .hero-media {
+    position: relative;
+    inset: auto;
+    z-index: 0;
+    width: 100%;
+    height: clamp(25rem, 65svh, 39rem);
+    flex: 0 0 auto;
+    overflow: hidden;
+  }
+
+  .hero-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 57%;
+  }
+
+  .hero-wash { display: none; }
+
+  .hero-content {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    padding: 2.5rem var(--gutter) 3rem;
+    background: #192820;
+  }
+
+  .hero h1 {
+    max-width: 17ch;
+    font-size: clamp(2.7rem, 8.7vw, 5rem);
+    line-height: .98;
+  }
+
+  .hero-meta {
+    grid-template-columns: 1fr;
+    gap: .9rem;
+    margin-top: 1.6rem;
+  }
+
+  .hero-now {
+    justify-self: start;
+    max-width: 34rem;
+    text-align: left;
+  }
+
+  .scroll-cue { display: none; }
+
+  .site-header:not(.is-scrolled) {
+    background: rgba(16, 31, 22, .78);
+  }
+}
+
+@media (min-width: 56rem) {
+  .hero-media img {
+    object-position: center 54%;
+  }
+}
+
+@media (max-width: 35rem) {
+  .hero-media {
+    height: clamp(23rem, 68svh, 34rem);
+  }
+
+  .hero-content {
+    padding-top: 2.2rem;
+    padding-bottom: 3rem;
+  }
+
+  .hero h1 {
+    font-size: clamp(2.6rem, 10vw, 4rem);
+  }
+}
